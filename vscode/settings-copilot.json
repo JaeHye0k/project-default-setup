@@ -1,0 +1,10 @@
+{
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+        {
+            "text": "항상 한국어로 작성해줘",
+        },
+        {
+            "text": "Use conventional commit message format.",
+        },
+    ]
+}
