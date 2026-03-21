@@ -1,0 +1,108 @@
+name: 💡 기능 제안
+description: 새로운 기능이나 개선 사항을 제안해주세요.
+title: '[Feature]: '
+labels: ['enhancement', 'triage']
+assignees: []
+
+body:
+    - type: markdown
+      attributes:
+          value: |
+              ## 💡 기능 제안을 작성해 주셔서 감사합니다!
+
+              가능한 상세하게 작성해주시면 기능 검토에 큰 도움이 됩니다.
+
+              ---
+
+    - type: textarea
+      id: feature-description
+      attributes:
+          label: 📋 기능 설명
+          description: 제안하시는 기능에 대해 명확하고 간결하게 설명해주세요.
+          placeholder: 어떤 기능을 원하시나요?
+      validations:
+          required: true
+
+    - type: textarea
+      id: problem
+      attributes:
+          label: 🤔 해결하려는 문제
+          description: 이 기능이 해결하려는 문제나 불편함을 설명해주세요.
+          placeholder: '예: ~할 때 ~해서 불편합니다...'
+      validations:
+          required: true
+
+    - type: textarea
+      id: proposed-solution
+      attributes:
+          label: 💡 제안하는 해결 방법
+          description: 원하시는 해결 방법이 있다면 설명해주세요.
+          placeholder: 이렇게 동작하면 좋겠습니다...
+      validations:
+          required: false
+
+    - type: textarea
+      id: alternatives
+      attributes:
+          label: 🔄 고려한 대안
+          description: 다른 대안을 고려해보셨다면 설명해주세요.
+          placeholder: 다른 방법으로는...
+      validations:
+          required: false
+
+    - type: dropdown
+      id: category
+      attributes:
+          label: 📂 카테고리
+          description: 제안하시는 기능의 카테고리를 선택해주세요.
+          options:
+              - 🎨 UI/UX 개선
+              - ⚡ 성능 개선
+              - 🆕 새로운 기능
+              - 🔧 기존 기능 개선
+              - 📱 반응형/접근성
+              - 🔗 외부 연동
+              - 기타
+      validations:
+          required: true
+
+    - type: dropdown
+      id: priority
+      attributes:
+          label: 📊 우선순위
+          description: 이 기능이 얼마나 중요하다고 생각하시나요?
+          options:
+              - 🔴 높음 - 핵심 기능에 필수적
+              - 🟡 중간 - 있으면 크게 도움됨
+              - 🟢 낮음 - 있으면 좋음
+      validations:
+          required: true
+
+    - type: textarea
+      id: screenshots
+      attributes:
+          label: 📸 참고 자료
+          description: 참고할 만한 스크린샷, 목업, 또는 유사 서비스 예시가 있다면 첨부해주세요.
+          placeholder: 이미지를 드래그 앤 드롭하거나 붙여넣기 해주세요.
+      validations:
+          required: false
+
+    - type: textarea
+      id: additional-context
+      attributes:
+          label: 📝 추가 정보
+          description: 기능 제안에 대한 추가적인 컨텍스트가 있다면 작성해주세요.
+          placeholder: 기타 도움이 될 만한 정보...
+      validations:
+          required: false
+
+    - type: checkboxes
+      id: checklist
+      attributes:
+          label: ✔️ 체크리스트
+          description: 이슈 제출 전 확인해주세요.
+          options:
+              - label: 기존 이슈에서 동일한 기능이 제안되지 않았는지 확인했습니다.
+                required: true
+              - label: 이 제안이 버그 리포트가 아닌 기능 제안임을 확인했습니다.
+                required: true
